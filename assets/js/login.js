@@ -43,7 +43,7 @@ $(function() {
             repassword: $('#form_reg [name=repassword]').val()
         }
 
-        $.post('http://www.liulongbin.top:3008/api/reg', data,
+        $.post('/api/reg', data,
             function(res) {
                 console.log(res);
 
@@ -69,7 +69,7 @@ $(function() {
             // console.log(data1.username);
             // console.log(data1.password)
         $.post(
-            'http://www.liulongbin.top:3008/api/login',
+            '/api/login',
             data1,
             function(res) {
 
